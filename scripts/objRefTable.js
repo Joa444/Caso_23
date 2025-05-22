@@ -64,9 +64,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.ToggleBoolInstanceVar,
 		C3.Plugins.Sprite.Acts.SetEffectParam,
 		C3.Plugins.System.Acts.SetLayerEffectEnabled,
-		C3.Plugins.progressbar.Acts.SetProgress,
 		C3.Plugins.System.Exps.loadingprogress,
-		C3.Plugins.progressbar.Cnds.CompareProgress
+		C3.Plugins.Sprite.Acts.SetWidth
 	];
 };
 self.C3_JsPropNameTable = [
@@ -212,6 +211,8 @@ self.C3_JsPropNameTable = [
 	{loading: 0},
 	{luces_Policia: 0},
 	{subrallo: 0},
+	{longitud: 0},
+	{Barra_De_Carga: 0},
 	{Personajes: 0},
 	{Preguntas: 0},
 	{Siguiente_Anterior: 0},
@@ -354,5 +355,6 @@ self.InstanceType = {
 	Humo: class extends self.ISpriteInstance {},
 	loading: class extends self.ISpriteInstance {},
 	luces_Policia: class extends self.ISpriteInstance {},
-	subrallo: class extends self.ISpriteInstance {}
+	subrallo: class extends self.ISpriteInstance {},
+	Barra_De_Carga: class extends self.ISpriteInstance {}
 }
