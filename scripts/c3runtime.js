@@ -1662,11 +1662,12 @@ self.C3_ExpressionFuncs = [
 		() => 1083.210237,
 		() => "Siguiente_Anterior3",
 		() => "GameOver3",
+		() => -20,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0();
 		},
-		() => -20
+		() => 428.917484
 ];
 
 
