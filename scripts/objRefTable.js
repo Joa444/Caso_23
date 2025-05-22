@@ -9,6 +9,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Keyboard,
 		C3.Behaviors.Fade,
 		C3.Plugins.TiledBg,
+		C3.Plugins.progressbar,
+		C3.Behaviors.Rotate,
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
 		C3.Plugins.System.Cnds.CompareBoolVar,
@@ -61,7 +63,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text.Exps.Y,
 		C3.Plugins.Sprite.Acts.ToggleBoolInstanceVar,
 		C3.Plugins.Sprite.Acts.SetEffectParam,
-		C3.Plugins.System.Acts.SetLayerEffectEnabled
+		C3.Plugins.System.Acts.SetLayerEffectEnabled,
+		C3.Plugins.progressbar.Acts.SetProgress,
+		C3.Plugins.System.Exps.loadingprogress,
+		C3.Plugins.progressbar.Cnds.CompareProgress
 	];
 };
 self.C3_JsPropNameTable = [
@@ -75,6 +80,7 @@ self.C3_JsPropNameTable = [
 	{Explicacion_aPreguntas: 0},
 	{Titulo_Max5: 0},
 	{EntradaDeTexto: 0},
+	{Texto_Loading: 0},
 	{Mesa: 0},
 	{Pedir_Documento: 0},
 	{Pedir_Objeto: 0},
@@ -200,6 +206,12 @@ self.C3_JsPropNameTable = [
 	{Persona_Muerta: 0},
 	{Persona_Muerta2: 0},
 	{Persona_Muerta3: 0},
+	{BarraDeProgreso: 0},
+	{Humo: 0},
+	{Girar: 0},
+	{loading: 0},
+	{luces_Policia: 0},
+	{subrallo: 0},
 	{Personajes: 0},
 	{Preguntas: 0},
 	{Siguiente_Anterior: 0},
@@ -222,6 +234,7 @@ self.InstanceType = {
 	Explicacion_aPreguntas: class extends self.ITextInstance {},
 	Titulo_Max5: class extends self.ITextInstance {},
 	EntradaDeTexto: class extends self.ITextInputInstance {},
+	Texto_Loading: class extends self.ITextInstance {},
 	Mesa: class extends self.ISpriteInstance {},
 	Pedir_Documento: class extends self.ISpriteInstance {},
 	Pedir_Objeto: class extends self.ISpriteInstance {},
@@ -336,5 +349,10 @@ self.InstanceType = {
 	FondoEnMosaico2: class extends self.ITiledBackgroundInstance {},
 	Persona_Muerta: class extends self.ISpriteInstance {},
 	Persona_Muerta2: class extends self.ISpriteInstance {},
-	Persona_Muerta3: class extends self.ISpriteInstance {}
+	Persona_Muerta3: class extends self.ISpriteInstance {},
+	BarraDeProgreso: class extends self.IProgressBarInstance {},
+	Humo: class extends self.ISpriteInstance {},
+	loading: class extends self.ISpriteInstance {},
+	luces_Policia: class extends self.ISpriteInstance {},
+	subrallo: class extends self.ISpriteInstance {}
 }
