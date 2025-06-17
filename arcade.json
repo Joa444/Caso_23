@@ -1,0 +1,30 @@
+{
+	"name": "CASO 23",
+	"version": "1.0.0.0",
+	"description": "",
+	"id": "",
+	"unique-id": "dyv63qxff3j",
+	"viewport-width": 1000,
+	"viewport-height": 960,
+	"author": "",
+	"email": "",
+	"website": "",
+	"orientations": "landscape",
+	"c2version": "244",
+	"c3version": "r440.2",
+	"ife": false,
+	"used-plugins": [
+		"Text",
+		"TextBox",
+		"Sprite",
+		"Mouse",
+		"Audio",
+		"Keyboard",
+		"TiledBg",
+		"progressbar"
+	],
+	"used-behaviors": [
+		"Fade",
+		"Rotate"
+	]
+}
